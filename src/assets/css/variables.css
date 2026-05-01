@@ -1,0 +1,37 @@
+.sidebar-menu {
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox hides scrollbar */
+}
+
+/* Hide scrollbar by default */
+.sidebar-menu::-webkit-scrollbar {
+  width: 0;
+  transition: width 0.2s ease;
+}
+
+/* Show scrollbar on hover */
+.sidebar-menu:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.sidebar-menu:hover::-webkit-scrollbar-track {
+  background: transparent;
+  
+}
+
+/* Thumb */
+.sidebar-menu:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+/* Better hover effect */
+.sidebar-menu:hover::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Firefox show on hover */
+.sidebar-menu:hover {
+  scrollbar-width: thin;
+}
